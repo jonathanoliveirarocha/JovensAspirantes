@@ -1,4 +1,4 @@
-/*  ------------ RESET ------------- */
+
 * {
      margin: 0;
      padding: 0;
@@ -19,13 +19,13 @@
     height: auto;
  }
 
- /*  ------------ VARIABLES ------------- */
+
  :root {
     --header-height: 4.5rem;
 
-    /* colors */
+
     --hue: 2000;
-    /* HSL color mode */
+  
     --base-color: hsl(var(--hue) 36% 57%);
     --base-color-second: hsl(var(--hue) 65% 88%);
     --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -34,7 +34,7 @@
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
 
-    /* fonts */
+
     --title-font-size: 1.875rem;
     --subtitle-font-size: 1rem;
 
@@ -42,7 +42,7 @@
     --body-font: 'DM Sans', sans-serif;
 }
 
- /* ------------- BASE -------------*/
+
  html {
      scroll-behavior: smooth;
  }
@@ -95,7 +95,7 @@
 }
 
 
- /*  ------------ LAYOUT ------------- */
+
  .container {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -139,7 +139,7 @@
      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15); 
  }
 
- /*  ------------ LOGO ------------- */
+
  .logo {
     font: 700 1.31rem var(--title-font);
     color: var(--title-color);
@@ -153,7 +153,7 @@
     color: var(--body-color);
 }
 
- /*  ------------ NAVIGATION ------------- */
+
  nav {
      height: var(--header-height);
      display: flex;
@@ -207,7 +207,7 @@ nav .menu ul {
     display: none;
 }
 
-/* Mostrar menu */
+
 nav.show .menu {
     opacity: 1;
     visibility: visible;
@@ -233,7 +233,7 @@ nav.show ul.grid {
     gap: 4rem;
 }
 
-/* toggle menu */
+
 .toggle {
     color: var(--base-color);
     font-size: 1.5rem;
@@ -257,7 +257,7 @@ nav.show div.icon-close {
     top: 1.5rem;
 }
 
- /*  ------------ HOME ------------- */
+ 
  #home { 
     overflow: hidden;
 }
@@ -305,7 +305,7 @@ nav.show div.icon-close {
      margin-bottom: 2rem;
  }
 
-  /*  ------------ ABOUT ------------- */
+
 #about {
     background: white;
 }
@@ -344,7 +344,7 @@ nav.show div.icon-close {
     margin-right: 1.5rem;
  }
 
-  /*  ------------ SERVICES ------------- */
+
   .cards.grid {
       gap: 1.5rem;
   }
@@ -371,7 +371,7 @@ nav.show div.icon-close {
 
 
 
-/* SWIPER */
+
 .swiper-slide {
     height: auto;
     padding: 4rem 1rem;
@@ -386,7 +386,7 @@ nav.show div.icon-close {
     background: var(--base-color);
 }
 
-/*  ------------ CONTACT ------------- */
+
 #contact .grid {
     gap: 4rem;
 }
@@ -414,7 +414,7 @@ nav.show div.icon-close {
     color: var(--base-color);
 }
 
-/*  ------------ footer ------------- */
+
 footer {
     background-color: var(--base-color);
 }
@@ -452,7 +452,7 @@ footer .social a:hover {
     transform: translateY(-8px);
 }
 
-/*  ------------ BACK TO TOP ------------- */
+
 .back-to-top {
     background: var(--base-color);
     color: var(--text-color-light);
@@ -480,8 +480,7 @@ footer .social a:hover {
     transform: translateY(0);
 }
 
-/*  ------------ MEDIA QUERIES ------------- */
-/* extra large devices: 1200 >*/
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1120px;
@@ -528,12 +527,12 @@ footer .social a:hover {
     nav .icon-menu {
         display: none;
     }
-    /* layout */
+
     main {
         margin-top: var(--header-height);
     }
     
-    /* home */
+
     #home .container {
         grid-auto-flow: column;
         justify-content: space-between;
@@ -549,13 +548,13 @@ footer .social a:hover {
         max-width: 24rem;
         text-align: left;
     }
-    /* about */
+ 
     #about .container {
         margin: 0 auto;
         grid-auto-flow: column;
     }
     
-    /* services */
+
     .cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -565,13 +564,13 @@ footer .social a:hover {
         padding-right: 3rem;
     }
 
-    /* testimonials*/
+ 
     #testimonials .container {
         margin-left: auto;
         margin-right: auto;
     }
 
-    /* contact */
+
     #contact .container {
         grid-auto-flow: column;
         align-items: center;
@@ -581,7 +580,7 @@ footer .social a:hover {
         max-width: 25rem;
     }
 
-    /* footer */
+
     footer.section {
         padding: 3.75rem 0;
     }
@@ -600,15 +599,14 @@ footer .logo {
     width: 100px;
     height: 100px;
 }
-/* large devices: 1023 > */
-/* large devices: 992 > */
+
 @media (min-width: 992px) {
     :root {
         --title-font-size: 2.25rem;
         --subtitle-font-size: 1.125rem;
     }
 }
-/* medium device: 767 > */
+
 @media (min-width: 767px) {
 
 }
