@@ -1,4 +1,4 @@
-/* abre e fecha o menu quando clicar no icone: hamburguer e x */
+
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -8,7 +8,7 @@ for (const element of toggle) {
     })
 }
 
-/* quando clicar em um item do menu, esconder o menu*/ 
+
 const links = document.querySelectorAll('nav ul li a')
 
 for (const link of links) {
@@ -17,23 +17,23 @@ for (const link of links) {
     })
 }
 
-/* Mudar o header da página quando der scroll */
+
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 
 function changeHeaderWhenScroll() {
 
-    // header.classList.add('scroll') 
+
     if (window.scrollY >= navHeight) {
-        // scroll é maior que a altura do header
+
         header.classList.add('scroll')   
     } else {
-        // menor que a altura do header
+    
         header.classList.remove('scroll') 
     }
 }
 
-/* testimonials carousel slider swiper*/
+
 const swiper = new Swiper('.swiper-container',{
     slidesPerView: 1,
     pagination: {
@@ -49,7 +49,7 @@ const swiper = new Swiper('.swiper-container',{
     }
 })
 
-/*ScrollReaveal: mostra elementos quando der scroll na página */
+
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -68,7 +68,7 @@ scrollReveal.reveal(
     { interval: 100 }
     )
 
- /* Botão voltar para o topo */
+
  const backToTopButton = document.querySelector('.back-to-top')
  
  function backToTop() {
@@ -80,7 +80,7 @@ scrollReveal.reveal(
     }
  }
 
- /* Menu ativo conforme a seção visível na página */ 
+
  const sections = document.querySelectorAll('main section[id]')
  function activateMenuAtCurrentSection() {
 
@@ -106,8 +106,7 @@ scrollReveal.reveal(
 
     }
  }
- 
- /* when Sscroll */
+
  window.addEventListener('scroll', function () {
     changeHeaderWhenScroll()
     backToTop()
